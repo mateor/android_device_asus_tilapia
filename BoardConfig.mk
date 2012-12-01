@@ -32,11 +32,19 @@
 USE_CAMERA_STUB := true
 USE_PROPRIETARY_AUDIO_EXTENSIONS := false
 
-TARGET_RECOVERY_UI_LIB := librecovery_ui_tilapia
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_tilapia
-TARGET_RECOVERY_UPDATER_EXTRA_LIBS := libIMCdownload libPrgHandler
+#TARGET_RECOVERY_UI_LIB := librecovery_ui_tilapia
+#TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_tilapia
+#TARGET_RECOVERY_UPDATER_EXTRA_LIBS := libIMCdownload libPrgHandler
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/tilapia
+
+#TWRP config:
+DEVICE_RESOLUTION := 800x1280
+TW_NO_USB_STORAGE := true
+BOARD_HAS_NO_REAL_SDCARD := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_ALWAYS_RMRF := true
+TW_NO_USB_STORAGE := true
 
 -include vendor/asus/tilapia/BoardConfigVendor.mk
 include device/asus/grouper/BoardConfigCommon.mk
