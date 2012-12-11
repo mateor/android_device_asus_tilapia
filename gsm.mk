@@ -1,5 +1,6 @@
 # SIM Toolkit
 PRODUCT_PACKAGES += \
+    Mms \
     Stk
 
 # CyanogenMod's GSM APN list
